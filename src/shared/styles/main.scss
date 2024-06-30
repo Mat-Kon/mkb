@@ -1,4 +1,5 @@
-@use 'abstract/variables' as var;
+@import 'abstract/variables';
+@import 'abstract/mixins';
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 * {
@@ -13,8 +14,11 @@ html {
 }
 
 button {
-  &:hover {
-    cursor: pointer;
+  @media (hover:hover) {
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
   }
 }
 
@@ -23,6 +27,10 @@ ul {
 }
 
 a {
-  color: var.$color-text-black;
+  color: $color-grey;
   text-decoration: none;
+}
+
+p {
+  color: $color-grey;
 }

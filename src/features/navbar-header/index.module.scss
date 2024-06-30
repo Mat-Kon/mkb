@@ -1,0 +1,12 @@
+@use '../../shared/styles/main.scss' as main;
+
+.navHeader {
+  width: 35%;
+  @include main.flex($justify: space-between);
+}
+
+.navHeader__list {
+  width: 100%;
+  @include main.flex($justify: space-between, $alignItems: center);
+  font-size: 1.6rem;
+}

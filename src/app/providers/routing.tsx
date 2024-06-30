@@ -1,5 +1,5 @@
 import { MainPage } from "@/pages";
-import { MainLayout } from "@/shared";
+import { MainLayout } from "@/shared/ui";
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 

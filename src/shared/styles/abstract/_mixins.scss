@@ -1,0 +1,33 @@
+@mixin flex($direction: row, $alignItems: normal, $justify: normal, $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $alignItems;
+  justify-content: $justify;
+  gap: $gap;
+}
+
+@mixin button($bgColor) {
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 110%;
+  border: none;
+  border-radius: 10px;
+  letter-spacing: 0.1rem;
+  transition: all 0.5s;
+
+  @if $bgColor =='pink' {
+    background-color: $color-primary-pink;
+  }
+
+  @else if $bgColor =='blue' {
+    background-color: $color-primary-blue;
+  }
+
+  @else {
+    background-color: $color-white;
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+}

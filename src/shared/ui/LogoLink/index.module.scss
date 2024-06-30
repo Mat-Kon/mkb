@@ -1,0 +1,7 @@
+@use '../../styles/main.scss' as main;
+
+.iconWrapper {
+  width: 40px;
+  height: 40px;
+  @include main.flex($alignItems: center, $justify: center);
+}

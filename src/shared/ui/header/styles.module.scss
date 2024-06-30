@@ -1,0 +1,7 @@
+@use '../../styles/main.scss' as main;
+
+.header {
+  @include main.flex($justify: center);
+  width: 100%;
+  padding: 20px 0;
+}

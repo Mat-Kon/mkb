@@ -1,0 +1,9 @@
+@use '../../styles/main.scss' as main;
+.wrapper {
+  width: 80%;
+  @include main.flex($justify: space-between);
+
+  &.column {
+    flex-direction: column;
+  }
+}

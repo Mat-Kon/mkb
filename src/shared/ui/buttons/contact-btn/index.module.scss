@@ -1,0 +1,15 @@
+@use '../../../styles/main.scss' as main;
+
+.pink {
+  @include main.button($bgColor: 'pink');
+  padding: 10px;
+}
+.blue {
+  @include main.button($bgColor: 'blue');
+  padding: 10px;
+}
+.white {
+  @include main.button($bgColor: 'white');
+  padding: 10px;
+  color: main.$color-black;
+}
